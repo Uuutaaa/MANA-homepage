@@ -1,0 +1,9 @@
+body {
+  background-color: #ffd8ec;
+  background-image: radial-gradient(#ff9ac9 2px, transparent 2px);
+  background-size: 25px 25px;
+  font-family: "Comic Sans MS", "Hiragino Maru Gothic ProN", sans-serif;
+}
+
+a { color: #ff66b3; text-decoration: none; }
+a:hover { text-shadow: 0 0 6px #ff99cc; }
