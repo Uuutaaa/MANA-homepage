@@ -5,5 +5,60 @@ body {
   font-family: "Comic Sans MS", "Hiragino Maru Gothic ProN", sans-serif;
 }
 
-a { color: #ff66b3; text-decoration: none; }
-a:hover { text-shadow: 0 0 6px #ff99cc; }
+h1 {
+  font-size: 42px;
+  margin-top: 60px;
+  margin-bottom: 5px;
+  color: #513241;
+  text-shadow: 0 0 6px #ffb3d9;
+}
+
+.title-box {
+  text-align: center;
+}
+
+.title-box::before,
+.title-box::after {
+  content: "✦ ✦ ✦ ✦ ✦";
+  display: block;
+  font-size: 18px;
+  color: #f19af7;
+  margin: 8px auto;
+  letter-spacing: 6px;
+}
+
+.visitor {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #d94d8a;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.menu a {
+  color: #e95296;
+  padding: 12px 26px;
+  border-radius: 18px;
+  font-size: 20px;
+  transition: 0.25s;
+}
+
+.menu a:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 10px #ffb8d8;
+}
+
+.password-box {
+  text-align: center;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
