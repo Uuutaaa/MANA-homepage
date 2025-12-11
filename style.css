@@ -62,3 +62,102 @@ h1 {
   color: red;
   font-weight: bold;
 }
+
+/* 全体の雰囲気 */
+body {
+  font-family: "Hiragino Maru Gothic Pro", "Yu Gothic", sans-serif;
+  background: linear-gradient(135deg, #ffe6f2, #fff7fc);
+  margin: 0;
+  padding: 0;
+  color: #444;
+}
+
+/* パスワード入力ボックス */
+#pwBox {
+  width: 90%;
+  max-width: 350px;
+  margin: 120px auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(255, 150, 200, 0.25);
+  animation: fadeIn 1s ease;
+}
+
+#pwBox h1 {
+  font-size: 26px;
+  color: #ff8bb3;
+}
+
+#pwBox p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+#pwBox input[type="password"] {
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ffb6d9;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+#pwBox button {
+  background: #ff8bb3;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+#pwBox button:hover {
+  background: #ff6fa3;
+}
+
+/* エラーメッセージ */
+.error {
+  color: #ff3e6b;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* 日記エリア */
+#diaryContent {
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffffee;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(255, 150, 200, 0.2);
+  animation: fadeIn 1s ease;
+}
+
+/* 日記タイトル */
+#diaryContent h2 {
+  color: #ff8bb3;
+  margin-top: 30px;
+  border-left: 5px solid #ffb6d9;
+  padding-left: 10px;
+}
+
+/* 日記文章 */
+#diaryContent p {
+  line-height: 1.8;
+  white-space: pre-line;
+  color: #555;
+  margin: 10px 0 20px;
+}
+
+/* フェードアニメ */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
